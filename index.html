@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website Universitas | Academik Web Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-image: url('Unismuh-Makassar.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px 0;
+            width: 100%;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+        .navbar .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .hero {
+            text-align: center;
+            color: white;
+            padding: 100px 0;
+        }
+        .hero .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .hero .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about img {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .faculties-list {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .faculties-list li {
+            width: calc(33.333% - 20px);
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+        }
+        .faculties-list img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .news-list {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .news-list li {
+            width: calc(33.333% - 20px);
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+        }
+        .news-list img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .contact-list {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+        .contact-list li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Universitas</a>
+                <ul class="nav-links">
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#faculties">Fakultas</a></li>
+                    <li><a href="#news">Berita</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Selamat Datang di Universitas</h1>
+            <p>Universitas yang berkelas dan berkualitas</p>
+            <button class="btn">Daftar Sekarang</button>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Universitas kami didirikan pada tahun Sekarang dengan visi menjadi salah satu universitas terbaik di Indonesia mudah mudahan hehe, dengan visi dan juga vasilitas yang kami sediakan, kami telah mencapai agreditas unggul dalam penilaian terakhir
+            
+            </p>
+            <img src="img/about.jpg" alt="About Image">
+        </div>
+    </section>
+    <section id="faculties" class="faculties">
+        <div class="container">
+            <h2>Fakultas</h2>
+            <h2>Dalam kampus kami memiliki beberapa fakultas dan juga prodi didalamnya. yah... mulai dari fakultas tehnik, Ekonomi</h2>
+            <ul class="faculties-list">
+                <li>
+                    <img src="img/faculty1.jpg" alt="Unismuh-Makassar.jpg">
+                    <h3>Fakultas Teknik</h3>
+                    <p>Fakultas Teknik adalah salah satu fakultas terbaik di universitas kami.</p>
+                </li>
+                <li>
+                    <img src="img/faculty2.jpg" alt="Faculty 2 Image">
+                    <h3>Fakultas Ekonomi</h3>
+                    <p>Fakultas Ekonomi adalah salah satu fakultas terbaik di universitas kami.</p>
+                </li>
+                <li>
+                    <img src="img/faculty3.jpg" alt="Faculty 3 Image">
+                    <h3>Fakultas Hukum</h3>
+                    <p>Fakultas Hukum adalah salah satu fakultas terbaik di universitas kami.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="news" class="news">
+        <div class="container">
+            <h2>Berita</h2>
+            <ul class="news-list">
+                <li>
+                    <img src="img/news1.jpg" alt="News 1 Image">
+                    <h3>Berita 1</h3>
+                    <p>Berita tentang kegiatan universitas kami.</p>
+                </li>
+                <li>
+                    <img src="img/news2.jpg" alt="News 2 Image">
+                    <h3>Berita 2</h3>
+                    <p>Berita tentang kegiatan universitas kami.</p>
+                </li>
+                <li>
+                    <img src="img/news3.jpg" alt="News 3 Image">
+                    <h3>Berita 3</h3>
+                    <p>Berita tentang kegiatan universitas kami.</p>
+                </li>
+            </ul>
+        </div>
+    </section>////
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Kontak</h2>
+            <p>Universitas kami berlokasi di Jalan Raya Bali, Indonesia.</p>
+            <ul class="contact-list">
+                <li><i class="fa fa-phone"></i> +62 kapan jadian?</li>
+                <li><i class="fa fa-envelope"></i> @ekalyptus/li>
+                <li><i class="fa fa-map-marker"></i> Jalan-in aja dulu, Indonesia</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
